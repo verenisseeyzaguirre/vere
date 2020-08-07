@@ -41,8 +41,9 @@ h2, p {
     color: white;  
 }
 .title {
-    margin: 100px 30px;
+    margin: 70px 0px 30px 10px;
     align-items: left;
+    font-weight: bold;
 }
 /* Navegación */
 nav {
@@ -117,3 +118,118 @@ img {
 .imgLogo {
     width: 30px;
 }
+
+.tittleContainer {
+    padding: 30px;
+}
+/*Carrusel*/
+.carousel {
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+    background-color: #5EE0C2;
+    overflow-y:hidden;
+  }
+  
+  .carousel__container {
+    white-space: nowrap;
+    /*para q no envuelva, x ejm en un texto se ajusta segun la ventana*/
+    margin: 50px 0px;
+    padding-bottom: 10px;
+  }
+  
+  .carousel-item {
+    /*background-color: royalblue;*/
+    width: 280px;
+    height: 190px;
+    border-radius: 20px;
+    overflow: hidden;
+    /**/
+    margin-right: 10px;
+    display: inline-block;
+    /*para anular el block y salga uno al costado y no debajo*/
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+  }
+  
+  .carousel-item:hover ~ .carousel-item {
+    transform: translate3d(100px, 0, 0);
+    /*cuando se haga hove se desplazaran a la derecha*/
+  }
+  
+  .carousel__container:hover .carousel-item {
+    opacity: 0.3;
+  }
+  
+  .carousel__container:hover .carousel-item:hover {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  
+  .carousel-item__img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .carousel-item__details {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 100%);
+    font-size: 10px;
+    opacity: 0.1;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+.container::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.container::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Cambiamos el fondo cuando esté en active */
+.container::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.container::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+/* Cambiamos el fondo cuando esté en active o hover */
+.container::-webkit-scrollbar-track:hover,
+.container::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      width: 740px;
+    }
+    section {
+        height: 1500px;
+    }
+    .container_about {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+    }
+  }
