@@ -14,34 +14,34 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+    font-weight: 250;
     font-size: 16px;
     color: #313131;
     overflow-y: hidden;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 100;
     text-transform: uppercase;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
 h2 {
-    font-size: 55px;
+    font-size: 45px;
     font-family: 'Montserrat', sans-serif;
     margin: 20px 0;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 20px 0;
 }
 
 p {
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Chilanka', cursive;
     margin: 20px 0;
 }
@@ -124,7 +124,7 @@ section:nth-of-type(3) {
 }
 
 .container_about_info img {
-    width: 400px;
+    width: 350px;
 }
 
 .container_about2 {
@@ -209,8 +209,8 @@ img {
     margin: 20px 0;
 }
   .carousel-item__img {
-    width: 350px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     object-fit: cover;
     margin: 0px 0px;
     border-radius: 20px;
@@ -286,7 +286,7 @@ img {
 .option {
     border: 2px solid blue;
     border-radius: 15px;
-    padding: 5px 50px;
+    padding: 5px 40px;
     color: blue;
 }
 .about_text{
@@ -328,17 +328,17 @@ img {
     .projects {
         display: flex;
         justify-content: center;
-        margin: 150px 0;
+        margin: 220px 0;
         flex-wrap: wrap;
     }
     .project-item {
-        width: 45%;
+        width: 32%;
     }
     .carousel-item__img {
-        width: 300px;
+        width: 220px;
     }
     .option {
-        padding: 5px 40px;
+        padding: 5px 20px;
 
     }
   }
