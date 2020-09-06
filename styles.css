@@ -82,7 +82,7 @@ a {
 }
 
 a:hover {
-    color: #F04A63;
+    color: #9e9e9e;
 }
 
 /* Secciones */
@@ -133,10 +133,10 @@ section:nth-of-type(3) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
 }
 
-img {
+.imgIntro {
     width: 300px;
 }
 
@@ -209,13 +209,33 @@ img {
     margin: 20px 0;
 }
   .carousel-item__img {
+    /*width: 300px;
+    height: 200px;
+    object-fit: cover;
+    */
+    margin: 0px 0px;
+    border-radius: 20px;
+    display: block;
+    width: 300px;
+    height: 200px;
+/*
+    max-width:300px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+    */
+  }
+/*
+.proyecto1{
+    background-image: url("https://github.com/verenisseeyzaguirre/react-gifapp/raw/master/src/img/gifcoding.png");
     width: 300px;
     height: 200px;
     object-fit: cover;
     margin: 0px 0px;
     border-radius: 20px;
-  }
-  
+}
+*/
+ 
   .carousel-item__details {
     display: flex;
     align-items: flex-start;
